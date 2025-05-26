@@ -14,7 +14,12 @@
     /* light green */
     --highlight-colour-2: #a1ffb2;
     /* light purple */
-    --highlight-colour-3: #f3dcff;
+    --highlight-colour-3: #dfa9ff;
+    /* bluepurple */
+    --highlight-colour-4: rgb(157, 145, 255);
+    /* offwhite purple */
+    --highlight-colour-5: #f7eeff;
+
     /* warning colour */
     --warning-colour: #e3170a;
 }
@@ -115,22 +120,28 @@ p {
 
 #extra-information {
     /* background-image: linear-gradient(to bottom, var(--background-colour-2), var(--background-colour-1)); */
-    background-color: var(--background-colour-2);
+    background-color: var(--highlight-colour-3);
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 15px;
 }
 
 .extra-title-text {
-    background-image: linear-gradient(to right, var(--highlight-colour-1), var(--highlight-colour-2));
+    background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
     color: transparent;
     background-clip: text;
     font-weight: 700;
 }
 
 #extra-information .card {
-    background-color: var(--highlight-colour-3);
+    background-color: var(--highlight-colour-5);
 }
+
+#extra-resources {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 
 /* buttons */
 #contact-button {
