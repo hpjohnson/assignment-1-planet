@@ -17,16 +17,38 @@
     --warning-colour: #e3170a;
 }
 
+/* general styles */
+
+body {
+    font-family: var(--primary-font);
+    /* push content down to avoid navbar */
+    padding: 56px;
+    background-color: var(--highlight-colour-1);
+}
+
+h1, h2, h3 {
+    font-family: var(--secondary-font);
+    font-weight: bold;
+}
+
+p {
+    font-weight: bold;
+}
+
+.active {
+    color: var(--highlight-colour-2);
+}
+
 /* navbar */
 
 #navbar {
-    background-color: var(--highlight-colour-1);
-    color: var(--background-colour-2);
+    background-color: var(--background-colour-1);
 }
 
 #brand-text {
     font-family: var(--secondary-font);
     font-weight: bold;
+    color: var(--highlight-colour-1);
 }
 
 #links-text {
@@ -34,9 +56,46 @@
     font-weight: bold;
 }
 
+/* header */
+
+.hero {
+    /* background-image: url(../images/hero_image.webp); */
+    background: url(../images/hero_image.webp) no-repeat 75% / cover;
+    padding: 10%;
+    z-index: 0;
+}
+
+.text-background {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    padding: 5%;
+}
+
+.hero-title {
+    /* gradient on text */
+    background-image: linear-gradient(to right, var(--highlight-colour-1), var(--highlight-colour-2));
+    color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.hero-text {
+    color: var(--highlight-colour-1);
+}
+
+
 /* buttons */
 #contact-button {
-    border: 2px solid var(--background-colour-2);
-    background-color: var(--background-colour-2);
-    color: white;
+    border: 2px solid var(--highlight-colour-1);
+    background-color: var(--highlight-colour-1);
+    color: var(--background-colour-2);
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+#contact-button:hover {
+    border: 2px solid var(--highlight-colour-2);
+    background-color: var(--highlight-colour-2);
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
