@@ -16,3 +16,27 @@
     /* warning colour */
     --warning-colour: #e3170a;
 }
+
+/* navbar */
+
+#navbar {
+    background-color: var(--highlight-colour-1);
+    color: var(--background-colour-2);
+}
+
+#brand-text {
+    font-family: var(--secondary-font);
+    font-weight: bold;
+}
+
+#links-text {
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+
+/* buttons */
+#contact-button {
+    border: 2px solid var(--background-colour-2);
+    background-color: var(--background-colour-2);
+    color: white;
+}
