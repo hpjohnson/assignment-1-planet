@@ -13,6 +13,8 @@
     --highlight-colour-1: #b7e1ff;
     /* light green */
     --highlight-colour-2: #a1ffb2;
+    /* light purple */
+    --highlight-colour-3: #f3dcff;
     /* warning colour */
     --warning-colour: #e3170a;
 }
@@ -26,7 +28,9 @@ body {
     background-color: var(--highlight-colour-1);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--secondary-font);
     font-weight: bold;
 }
@@ -66,7 +70,7 @@ p {
 }
 
 .text-background {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     padding: 5%;
 }
@@ -85,7 +89,8 @@ p {
 
 /* intro information */
 #intro-information {
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .intro-text-box {
@@ -104,6 +109,27 @@ p {
 .intro-text {
     color: var(--background-colour-1);
     font-weight: bold;
+}
+
+/* extra information */
+
+#extra-information {
+    /* background-image: linear-gradient(to bottom, var(--background-colour-2), var(--background-colour-1)); */
+    background-color: var(--background-colour-2);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+}
+
+.extra-title-text {
+    background-image: linear-gradient(to right, var(--highlight-colour-1), var(--highlight-colour-2));
+    color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+#extra-information .card {
+    background-color: var(--highlight-colour-3);
 }
 
 /* buttons */
