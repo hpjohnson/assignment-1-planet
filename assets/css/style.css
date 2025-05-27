@@ -61,7 +61,7 @@ p {
     color: var(--highlight-colour-1);
 }
 
-#links-text {
+.links-text {
     font-family: var(--primary-font);
     font-weight: bold;
 }
@@ -171,8 +171,29 @@ p {
     border-radius: 15px;
 }
 
+/* contact section on main page */
+
+#contact {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: var(--highlight-colour-3);
+}
+
+.contact-title-text {
+    background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
+    color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.contact-info-text {
+    color: var(--background-colour-2);
+}
+
 /* buttons */
-#contact-button {
+#contact-button-nav {
     border: 2px solid var(--highlight-colour-1);
     background-color: var(--highlight-colour-1);
     color: var(--background-colour-2);
@@ -180,13 +201,36 @@ p {
     transition: all 0.5s;
 }
 
-#contact-button:hover {
+#contact-button-nav:hover {
     border: 2px solid var(--highlight-colour-2);
     background-color: var(--highlight-colour-2);
     transform: scale(1.1);
     transition: all 0.5s;
 }
 
+.contact-button-section {
+    border: 2px solid var(--background-colour-2);
+    background-color: var(--background-colour-2);
+    transition: all 0.5s;
+}
+.contact-button-section:hover {
+    border: 2px solid var(--background-colour-1);
+    background-color: var(--background-colour-1);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.contact-button-section-text {
+    background-image: linear-gradient(to right, var(--highlight-colour-1), var(--highlight-colour-2));
+    color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.contact-button-section-text:hover {
+    background-image: linear-gradient(to left, var(--highlight-colour-1), var(--highlight-colour-2));
+}
 /* media queries */
 @media screen and (max-width: 768px) {
 
