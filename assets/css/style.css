@@ -195,6 +195,12 @@ label {
     background-color: var(--highlight-colour-3);
 }
 
+.contact-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .contact-title-text {
     background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
     color: transparent;
@@ -205,6 +211,13 @@ label {
 .contact-info-text {
     color: var(--background-colour-2);
 }
+
+.contact-picture {
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 /* contact page */
 /* page needs a header so i will just put the title there, i want the form and its text in the body so only */
@@ -250,13 +263,6 @@ label {
     color: white;
     border-radius: 15px;
     font-size: 1.3rem;
-}
-
-.contact-form-picture {
-    border-radius: 15px;
-    max-width: 100%;
-    max-height: 100%;
-    margin-top: 15px;
 }
 
 /* footer */
@@ -333,12 +339,9 @@ label {
     .intro-image {
         display: none;
     }
-}
-
-@media screen and (max-width: 992px ){
 
     /* hide image on small screens so website is easier to scroll, it exists on larger screens to make it look nicer */
-    .contact-form-picture {
+    .contact-picture {
         display: none;
     }
 }
