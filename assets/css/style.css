@@ -78,14 +78,17 @@ p {
     /* background-image: url(../images/hero_image.webp); */
     background: url(../images/hero_image.webp) no-repeat 75% / cover;
     padding: 10%;
-    z-index: 0;
+    margin-top: 15px;
+    border-radius: 15px;
 }
 
 .text-background {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     padding: 5%;
+    border-radius: 15px;
 }
+
 
 .hero-title {
     /* gradient on text */
