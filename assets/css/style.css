@@ -30,7 +30,7 @@
 body {
     font-family: var(--primary-font);
     /* push content down to avoid navbar */
-    padding: 56px;
+    padding-top: 56px;
     background-color: var(--highlight-colour-1);
 }
 
@@ -177,6 +177,7 @@ p {
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 15px;
+    margin-bottom: 15px;
     border-radius: 15px;
     background-color: var(--highlight-colour-3);
 }
@@ -190,6 +191,38 @@ p {
 
 .contact-info-text {
     color: var(--background-colour-2);
+}
+
+/* footer */
+#footer {
+    background-color: var(--background-colour-1);
+}
+
+.footer-box {
+    margin-top: 15px;
+}
+
+.citations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-title-text {
+    color: var(--highlight-colour-1);
+}
+
+.footer-icon {
+    color: var(--highlight-colour-1);
+    font-size: 1.5rem;
+    margin: 5px;
+    transition: all 0.5s;
+}
+
+.footer-icon:hover {
+    color: var(--highlight-colour-2);
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 /* buttons */
@@ -213,6 +246,7 @@ p {
     background-color: var(--background-colour-2);
     transition: all 0.5s;
 }
+
 .contact-button-section:hover {
     border: 2px solid var(--background-colour-1);
     background-color: var(--background-colour-1);
@@ -228,9 +262,6 @@ p {
     font-size: 1.2rem;
 }
 
-.contact-button-section-text:hover {
-    background-image: linear-gradient(to left, var(--highlight-colour-1), var(--highlight-colour-2));
-}
 /* media queries */
 @media screen and (max-width: 768px) {
 
