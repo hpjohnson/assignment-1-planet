@@ -28,10 +28,11 @@
                         <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a class="nav-link" href="./index.html#external-resources">Resources</a>
+                        <a class="nav-link internal" href="./index.html#external-resources">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <a id="contact-button-nav-current" class="btn ms-lg-3 green" aria-current="page" href="contact.html">Contact</a>
+                        <a id="contact-button-nav-current" class="btn ms-lg-3 green" aria-current="page"
+                            href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -121,6 +122,28 @@
         crossorigin="anonymous"></script>
     <!-- fontawesome kit -->
     <script src="https://kit.fontawesome.com/a18a4cca9c.js" crossorigin="anonymous"></script>
+    <!-- extra scripts -->
+    <script>
+        // close navbar after click
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>
