@@ -350,6 +350,19 @@ label {
     transition: all 0.5s;
 }
 
+#contact-button-nav-current {
+    border: 2px solid var(--highlight-colour-2);
+    background-color: var(--highlight-colour-2);
+    color: var(--background-colour-2);
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+#contact-button-nav-current:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
 .contact-button-section {
     border: 2px solid var(--background-colour-2);
     background-color: var(--background-colour-2);
@@ -370,7 +383,9 @@ label {
 }
 
 /* media queries */
-@media screen and (max-width: 768px) {
+/* this max width needs to be 1px below the break point otherwise there is a single window size that has the */
+/* split columns but no image */
+@media screen and (max-width: 767px) {
 
     /* hide image on small screens so website is easier to scroll, it exists on larger screens to make it look nicer */
     .intro-image {
