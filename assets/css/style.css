@@ -19,7 +19,8 @@
     --highlight-colour-4: rgb(157, 145, 255);
     /* offwhite purple */
     --highlight-colour-5: #f7eeff;
-
+    /* offwhite uhhh */
+    --highlight-colour-6: #f0d5f6;
     /* warning colour */
     --warning-colour: #e3170a;
 }
@@ -114,7 +115,7 @@ p {
 }
 
 .intro-text {
-    color: var(--background-colour-1);
+    color: var(--background-colour-2);
     font-weight: bold;
 }
 
@@ -127,7 +128,6 @@ p {
 /* extra information section */
 
 #extra-information {
-    /* background-image: linear-gradient(to bottom, var(--background-colour-2), var(--background-colour-1)); */
     background-color: var(--highlight-colour-3);
     padding-top: 15px;
     padding-bottom: 15px;
@@ -146,13 +146,30 @@ p {
     border-radius: 15px;
 }
 
-/* extra resources section */
-
-#extra-resources {
+/* external resources section */
+#external-resources {
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: var(--highlight-colour-5);
 }
 
+.external-resources-title-text {
+    background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
+    color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.external-resources-info-text {
+    color: var(--background-colour-2)
+}
+
+.external-resources-card {
+    background-color: var(--highlight-colour-6);
+    border-radius: 15px;
+}
 
 /* buttons */
 #contact-button {
