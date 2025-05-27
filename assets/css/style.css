@@ -265,6 +265,43 @@ label {
     font-size: 1.3rem;
 }
 
+/* success page */
+
+#success-page-header {
+    margin-top: 15px;
+    background-color: var(--highlight-colour-3);
+    border-radius: 15px;
+}
+
+.success-page-header-title-text {
+    background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
+    color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.success-page-message-box {
+    background-color: var(--highlight-colour-5);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: var(--background-colour-2);
+}
+
+.success-page-message-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.success-page-success-image {
+    border-radius: 15px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 /* footer */
 #footer {
     background-color: var(--background-colour-1);
