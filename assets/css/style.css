@@ -49,6 +49,12 @@ p {
     color: var(--highlight-colour-2);
 }
 
+.vertical-align-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* navbar */
 
 #navbar {
@@ -95,15 +101,14 @@ p {
 
 /* intro information */
 #intro-information {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .intro-text-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: var(--highlight-colour-5);
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-radius: 15px;
 }
 
