@@ -382,6 +382,11 @@ label {
     font-size: 1.2rem;
 }
 
+.navbar-button {
+    color: var(--highlight-colour-1);
+    font-size: 1.5rem;
+}
+
 /* media queries */
 /* this max width needs to be 1px below the break point otherwise there is a single window size that has the */
 /* split columns but no image */
