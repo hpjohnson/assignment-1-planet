@@ -60,6 +60,10 @@ label {
     color: var(--background-colour-2);
 }
 
+ul {
+    font-weight: bold;
+}
+
 /* navbar */
 
 #navbar {
