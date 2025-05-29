@@ -225,6 +225,38 @@ ul {
     max-height: 100%;
 }
 
+/* reassurance section */
+#reassurance {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: var(--highlight-colour-6);
+}
+
+.reassurance-title-text {
+    background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
+    color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.reassurance-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reassurance-info-text {
+    color: var(--background-colour-2);
+}
+
+.reassurance-picture {
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 /* contact page */
 /* page needs a header so i will just put the title there, i want the form and its text in the body so only */
