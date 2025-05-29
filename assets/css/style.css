@@ -403,10 +403,49 @@ ul {
     }
 }
 
-@media screen and (max-width: 991px){
+/* same as above */
+@media screen and (max-width: 991px) {
     /* hide image on small screens so website is easier to scroll, it exists on larger screens to make it look nicer */
     .intro-image {
         display: none;
     }
     
+}
+
+/* for large screens and up */
+@media screen and (min-width: 992px) {
+    /* fix card heights in extra information section*/
+    .card-2 {
+        padding-bottom: 63.83px;
+    }
+    
+    .card-1 {
+        padding-bottom: 80px;
+    }
+
+}
+
+/* xl screens and up */
+@media screen and (min-width: 1200px) {
+    /* fix card heights in extra information section*/
+    .card-2 {
+        padding-bottom: 48px;
+    }
+
+    .card-1 {
+        padding-bottom: 80px;
+    }
+
+}
+
+/* xxl screens and up */
+@media screen and (min-width: 1400px) {
+    /* fix card heights in extra information section */
+    .card-2 {
+        padding-bottom: 72px;
+    }
+
+    .card-1 {
+        padding-bottom: 56px;
+    }
 }
