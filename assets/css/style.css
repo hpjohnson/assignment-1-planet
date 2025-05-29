@@ -64,6 +64,9 @@ ul {
     font-weight: bold;
 }
 
+.card {
+    color: var(--background-colour-2);
+}
 /* navbar */
 
 #navbar {
