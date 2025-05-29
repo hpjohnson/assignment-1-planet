@@ -412,7 +412,14 @@ ul {
     
 }
 
-/* for large screens and up */
+/* medium screens and up */
+@media screen and (min-width: 768px) {
+    /* fix card heights in external resources section do this with buttons instead so they go to the bottom of the card */
+    .external-button-4 {
+        padding-top: 25px;
+    }
+}
+/* large screens and up */
 @media screen and (min-width: 992px) {
     /* fix card heights in extra information section*/
     .card-2 {
@@ -423,6 +430,11 @@ ul {
         padding-bottom: 80px;
     }
 
+    /* fix card heights in external resources section */
+    .external-button-4 {
+        padding-top: 0;
+    }
+    
 }
 
 /* xl screens and up */
@@ -436,6 +448,11 @@ ul {
         padding-bottom: 80px;
     }
 
+    /* fix card heights in external resources section */
+    .external-button-4 {
+        padding-top: 24px;
+    }
+
 }
 
 /* xxl screens and up */
@@ -447,5 +464,10 @@ ul {
 
     .card-1 {
         padding-bottom: 56px;
+    }
+
+    /* fix card heights in external resources section */
+    .external-button-1, .external-button-2, .external-button-4 {
+        padding-top: 24px;
     }
 }
