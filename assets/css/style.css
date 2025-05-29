@@ -394,12 +394,15 @@ label {
 @media screen and (max-width: 767px) {
 
     /* hide image on small screens so website is easier to scroll, it exists on larger screens to make it look nicer */
-    .intro-image {
-        display: none;
-    }
-
-    /* hide image on small screens so website is easier to scroll, it exists on larger screens to make it look nicer */
     .contact-picture {
         display: none;
     }
+}
+
+@media screen and (max-width: 991px){
+    /* hide image on small screens so website is easier to scroll, it exists on larger screens to make it look nicer */
+    .intro-image {
+        display: none;
+    }
+    
 }
