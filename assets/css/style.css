@@ -67,6 +67,7 @@ ul {
 .card {
     color: var(--background-colour-2);
 }
+
 /* navbar */
 
 #navbar {
@@ -440,27 +441,31 @@ ul {
 
 /* same as above */
 @media screen and (max-width: 991px) {
+
     /* hide image on small screens so website is easier to scroll, it exists on larger screens to make it look nicer */
     .intro-image {
         display: none;
     }
-    
+
 }
 
 /* medium screens and up */
 @media screen and (min-width: 768px) {
+
     /* fix card heights in external resources section do this with buttons instead so they go to the bottom of the card */
     .external-button-4 {
         padding-top: 25px;
     }
 }
+
 /* large screens and up */
 @media screen and (min-width: 992px) {
+
     /* fix card heights in extra information section*/
     .card-2 {
         padding-bottom: 63.83px;
     }
-    
+
     .card-1 {
         padding-bottom: 80px;
     }
@@ -469,11 +474,12 @@ ul {
     .external-button-4 {
         padding-top: 0;
     }
-    
+
 }
 
 /* xl screens and up */
 @media screen and (min-width: 1200px) {
+
     /* fix card heights in extra information section*/
     .card-2 {
         padding-bottom: 48px;
@@ -492,6 +498,7 @@ ul {
 
 /* xxl screens and up */
 @media screen and (min-width: 1400px) {
+
     /* fix card heights in extra information section */
     .card-2 {
         padding-bottom: 72px;
@@ -502,7 +509,9 @@ ul {
     }
 
     /* fix card heights in external resources section */
-    .external-button-1, .external-button-2, .external-button-4 {
+    .external-button-1,
+    .external-button-2,
+    .external-button-4 {
         padding-top: 24px;
     }
 }
