@@ -151,7 +151,6 @@ ul {
 #extra-information {
     background-color: var(--highlight-colour-3);
     padding-top: 15px;
-    padding-bottom: 15px;
     border-radius: 15px;
 }
 
@@ -170,7 +169,7 @@ ul {
 /* external resources section */
 #external-resources {
     padding-top: 15px;
-    padding-bottom: 15px;
+
     margin-top: 15px;
     border-radius: 15px;
     background-color: var(--highlight-colour-5);
