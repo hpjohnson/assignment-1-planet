@@ -50,8 +50,15 @@ p {
 }
 
 .vertical-align-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -105,8 +112,11 @@ ul {
 
 .hero-title {
     /* gradient on text */
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--highlight-colour-1)), to(var(--highlight-colour-2)));
+    background-image: -o-linear-gradient(left, var(--highlight-colour-1), var(--highlight-colour-2));
     background-image: linear-gradient(to right, var(--highlight-colour-1), var(--highlight-colour-2));
     color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
     font-weight: 700;
 }
@@ -129,8 +139,11 @@ ul {
 }
 
 .intro-title {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-colour-1)), to(var(--background-colour-2)));
+    background-image: -o-linear-gradient(left, var(--background-colour-1), var(--background-colour-2));
     background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
     color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
     font-weight: 700;
 }
@@ -155,8 +168,11 @@ ul {
 }
 
 .extra-title-text {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-colour-1)), to(var(--background-colour-2)));
+    background-image: -o-linear-gradient(left, var(--background-colour-1), var(--background-colour-2));
     background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
     color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
     font-weight: 700;
 }
@@ -176,8 +192,11 @@ ul {
 }
 
 .external-resources-title-text {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-colour-1)), to(var(--background-colour-2)));
+    background-image: -o-linear-gradient(left, var(--background-colour-1), var(--background-colour-2));
     background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
     color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
     font-weight: 700;
 }
@@ -203,14 +222,24 @@ ul {
 }
 
 .contact-text-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .contact-title-text {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-colour-1)), to(var(--background-colour-2)));
+    background-image: -o-linear-gradient(left, var(--background-colour-1), var(--background-colour-2));
     background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
     color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
     font-weight: 700;
 }
@@ -235,15 +264,25 @@ ul {
 }
 
 .reassurance-title-text {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-colour-1)), to(var(--background-colour-2)));
+    background-image: -o-linear-gradient(left, var(--background-colour-1), var(--background-colour-2));
     background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
     color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
     font-weight: 700;
 }
 
 .reassurance-text-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -268,8 +307,11 @@ ul {
 }
 
 .contact-page-header-title-text {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-colour-1)), to(var(--background-colour-2)));
+    background-image: -o-linear-gradient(left, var(--background-colour-1), var(--background-colour-2));
     background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
     color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
     font-weight: 700;
 }
@@ -285,15 +327,29 @@ ul {
     color: var(--background-colour-2);
     font-weight: bold;
     padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .contact-form-box {
     padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -313,8 +369,11 @@ ul {
 }
 
 .success-page-header-title-text {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-colour-1)), to(var(--background-colour-2)));
+    background-image: -o-linear-gradient(left, var(--background-colour-1), var(--background-colour-2));
     background-image: linear-gradient(to right, var(--background-colour-1), var(--background-colour-2));
     color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
     font-weight: 700;
 }
@@ -330,8 +389,15 @@ ul {
 }
 
 .success-page-message-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 15px;
 }
@@ -352,8 +418,15 @@ ul {
 }
 
 .citations {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -365,12 +438,18 @@ ul {
     color: var(--highlight-colour-1);
     font-size: 1.5rem;
     margin: 5px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .footer-icon:hover {
     color: var(--highlight-colour-2);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -380,13 +459,19 @@ ul {
     background-color: var(--highlight-colour-1);
     color: var(--background-colour-2);
     font-weight: bold;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 #contact-button-nav:hover {
     border: 2px solid var(--highlight-colour-2);
     background-color: var(--highlight-colour-2);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -395,24 +480,36 @@ ul {
     background-color: var(--highlight-colour-2);
     color: var(--background-colour-2);
     font-weight: bold;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 #contact-button-nav-current:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .contact-button-section {
     border: 2px solid var(--background-colour-2);
     background-color: var(--background-colour-2);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .contact-button-section:hover {
     border: 2px solid var(--background-colour-1);
     background-color: var(--background-colour-1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
