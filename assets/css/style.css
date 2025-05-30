@@ -484,6 +484,16 @@ ul {
     .hero {
         margin-top: 22px;
     }
+
+    /* fix contact title being to close to navbar */
+    #contact-page-header {
+        margin-top: 22px;
+    }
+
+    /* fix success title being to close to navbar */
+    #success-page-header {
+        margin-top: 22px;
+    }
 }
 
 /* xl screens and up */
