@@ -449,12 +449,18 @@ ul {
 
 }
 
+
 /* medium screens and up */
 @media screen and (min-width: 768px) {
 
     /* fix card heights in external resources section do this with buttons instead so they go to the bottom of the card */
     .external-button-4 {
         padding-top: 25px;
+    }
+
+    /* fix reassurance section having too much space at the bottom on medium screens and up */
+    .reassurance-info-text {
+        margin-bottom: 0px;
     }
 }
 
