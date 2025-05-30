@@ -475,6 +475,10 @@ ul {
         padding-top: 0;
     }
 
+    /* fix hero being to close to navbar */
+    .hero {
+        margin-top: 22px;
+    }
 }
 
 /* xl screens and up */
