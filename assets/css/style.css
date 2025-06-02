@@ -185,7 +185,6 @@ ul {
 /* external resources section */
 #external-resources {
     padding-top: 15px;
-
     margin-top: 15px;
     border-radius: 15px;
     background-color: var(--highlight-colour-5);
@@ -260,7 +259,7 @@ ul {
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-radius: 15px;
-    background-color: var(--highlight-colour-6);
+    background-color: var(--highlight-colour-5);
 }
 
 .reassurance-title-text {
