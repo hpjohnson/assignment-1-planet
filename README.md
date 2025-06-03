@@ -69,7 +69,7 @@ As a person who is interested in contacting the owner, I want to be certain that
 
 ## Colours
 
-I wanted to choose a calming colour scheme, as mental health can be a tricky subject to navigate. Therefore, I chose a website where all the main content used nice, muted, pastel colours. Going along with the theme of planets and space, I chose blues, purples, and pinks, with green for highlights. In order to make meta content (ie the header, footer and buttons) stand out from the main content, I chose more saturated colours. Considering the content of the website and its contact section, I thought it best to include a warning that it is not appropriate to contact the website in case of emergency, and instead you should contact an appropriate agency. To make this stand out, I chose a fairly bright red.
+I wanted to choose a calming colour scheme, as mental health can be a tricky subject to navigate. Therefore, I chose a website where all the main content used calming and muted pastel colours. Going along with the theme of planets and space, I chose blues, purples, and pinks, with green for highlights. In order to make meta content (ie the header, footer and buttons) stand out from the main content, I chose more saturated colours. Considering the content of the website and its contact section, I thought it best to include a warning that it is not appropriate to contact the website in case of emergency, and instead you should contact an appropriate agency. To make this stand out, I chose a fairly bright red.
 
 The website passes the [WAVE](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) contrast checker on all pages, as well as the [Colour Contrast Checker](https://colourcontrast.cc/).
 
@@ -88,11 +88,13 @@ The website passes the [WAVE](https://chromewebstore.google.com/detail/wave-eval
 
 ## Imagery and Theming
 
-The primary reason I chose a space theme was simply because it was the first theme I though of. However, I do think it is appropriate in the sense that staring up and looking to the stars is quite relaxing - which is a theme I wanted for the website due to mental health being a heavy topic. I chose a nice image of some planets for the banner, and astronaut characters elsewhere, as they seemed appropriate. 
+The primary reason I chose a space theme was simply because it was the first theme I though of. However, I do think it is appropriate in the sense that staring up and looking to the stars is quite relaxing - which is a theme I wanted for the website due to mental health being a heavy topic. I chose a nice image of some planets for the banner, and astronaut characters elsewhere as they seemed appropriate. 
 
 I used [paint.net](https://www.getpaint.net/) to change the background colour of the images for consitency, and [Squoosh](https://squoosh.app/) to compress and convert the images to webp.
 
-The images were sourced from [Freepik](https://www.freepik.com/), following their [attribution policy](https://support.freepik.com/s/article/Attribution-How-when-and-where?language=en_US).
+The images were sourced from [Freepik](https://www.freepik.com/), following their [attribution policy](https://support.freepik.com/s/article/Attribution-How-when-and-where?language=en_US). 
+
+All the sections that contain the content have rounded corners. This is consistent with the rounded font, and I simply prefer how it looks compared to sharp corners. The header and footer have sharp corners however, and this is to make them stand out from the main content.
 
 ## Font
 
@@ -114,31 +116,32 @@ Features were added following the rubrick as guidance, with deviations as approp
 
 ### Navigation
 
-A standard [Bootstrap navbar](https://getbootstrap.com/docs/5.3/components/navbar/) is used for navigation, as it has a familiar layout which is good for user experience.
+A standard [Bootstrap navbar](https://getbootstrap.com/docs/5.3/components/navbar/) is used for navigation, as it has a familiar layout which is good for user experience. It shrinks to a dropdown on medium screens.
 
 ### Hero
 
-The hero image does not use a [Bootstrap jumbotron](https://getbootstrap.com/docs/5.3/examples/jumbotron/) as requested, rather a custom implementation. Instead of including a positive message here, I moved it to the end of the page and combined it with the positive affirmations outlined. In its place is an appropriate tagline for the website. 
+The hero image does not use a [Bootstrap jumbotron](https://getbootstrap.com/docs/5.3/examples/jumbotron/) as requested, rather a custom implementation. I have simply used a background image, with a translucent black box on top. This allows me to use a unique, light text colour for the main title such that it stands out from the rest of the content on the page. 
+
+Instead of including a positive message here, I moved it to the end of the page and combined it with the positive affirmations outlined. In its place is an appropriate tagline for the website. 
 
 ### Information Cards
 
-As requested, [Boostrap cards](https://getbootstrap.com/docs/5.3/components/card/) were used to display content about symptoms and tips.
+As requested, [Boostrap cards](https://getbootstrap.com/docs/5.3/components/card/) are used to display content about symptoms and tips.
 
 ### Resource Links
 
-[Boostrap cards](https://getbootstrap.com/docs/5.3/components/card/) were used for the links to external resources, as they are simple to use. Big, contrastful buttons that stand out are placed on each card that link to the appropriate page.
-
+[Boostrap cards](https://getbootstrap.com/docs/5.3/components/card/) are used for the links to external resources, as they are simple to use. Big, contrastful buttons that stand out are placed on each card that link to the appropriate page in a new tab.
 ### Positive Affirmations
 
-Instead of a list of commonly used quotes or generic positive messages that have lost all meaning, I chose to merge the encouraging message requested in the hero section with this section. On the website, this section is titled "Words of Encouragement".
+Instead of a list of commonly used quotes or generic positive messages, I chose to merge the encouraging message requested in the hero section with this section. On the website, this section is titled "Words of Encouragement". This makes the message seem more personal, and hopefully have more meaning than a variety of generic phrases or quotes that people have heard many times over.
 
 ### Buttons
 
-Buttons and clickable icons are coloured to contrast with the background. They have a simple hover effect in which they change colour and enlarge slightly.
+Buttons and clickable icons are coloured to contrast with the background. They have a simple hover effect in which they change colour and enlarge slightly. The buttons are screenreader accessible, each with a label stating where they link to, and the fact that they open in a new tab.
 
 ### Footer
 
-The footer contains links to social media websites, a link to the creators github, and the required credit for the stock images.
+The footer contains links to social media websites, a link to the creators github, and the required credit for the stock images. I chose to use [Font Awesome](https://fontawesome.com/) icons for these, as they take up less space on the screen. Each icon acts as a link, so they have the same accessibility features as the buttons mentioned above.
 
 ## Contact Page
 
@@ -152,11 +155,13 @@ The form has HTML validation ensuring it is filled, and once successfully submit
 
 I used some custom media queries to fix issues with padding and margins arising from text lengths, along with hiding images on smaller screens where they only serve to make the website take longer to scroll.
 
+For the text content in the intro and contact sections, I used flexbox to center the content within the section. This only makes a difference on larger screens where the images show up, but it keeps the website's style more consistent overall as all text is centered.
+
 # Deployment and Tools
 
 ## Deployment
 
-The website uses [GitHub Pages](https://pages.github.com/) for hosting, and was coded using [VSCode](https://code.visualstudio.com/).
+The website uses [GitHub Pages](https://pages.github.com/) for hosting, and was coded using the [VSCode](https://code.visualstudio.com/) ide.
 
 ## Tools
 
@@ -173,7 +178,7 @@ The website uses [GitHub Pages](https://pages.github.com/) for hosting, and was 
 
 Testing was done during project creation using the [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) addon for obvious bugs, and Chrome Dev Tools as necessary (for example, where a specific amount of pixels of padding/margin were needed).
 
-I used the following [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/#validate_by_uri) validators to check for any problems with my code, and [Autoprefixer](https://autoprefixer.github.io/) to ensure all browser Compatibility. [WAVE](https://wave.webaim.org/) was used for accessibility, and Google's Lighthouse built into Chrome dev tools for best practices and optimisation.
+I used the following [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/#validate_by_uri) validators to check for any problems with my code, and [Autoprefixer](https://autoprefixer.github.io/) to ensure all browser Compatibility for my CSS. [WAVE](https://wave.webaim.org/) was used for accessibility, and Google's Lighthouse built into Chrome dev tools for best practices and optimisation.
 
 ## Index
 
@@ -204,22 +209,28 @@ As requested by Code Institute, I have to include a statement on how AI was used
 AI was not used in this project for the reasons stated below.
 
 ## AI Code Generation
-This website is very simple in terms of code, and as such using AI to generate any part of it was slower than just manually writing it with the usage of [Emmet](https://emmet.io/). I tested this myself, by first creating one of the sections (the "Introduction to Mental Health Information" section) manually with all the necessary styles, and then creating a second section (the "External Resources" section) using copilot. It took far longer to formulate a prompt that would create the design I wanted and make any necessary changes than it took me to make the other section manually.
+This website is very simple in terms of code, and as such using AI to generate any part of it was slower than just manually writing it with the usage of [Emmet](https://emmet.io/). I tested this myself, by first creating one of the sections (the "Introduction to Mental Health Information" section) manually with all the necessary styles, and then creating a second section (the "External Resources" section) using copilot. It took far longer to formulate a prompt that would create the design I wanted and make any necessary changes than it took me to make the other section manually. Since the rest of the website was similar in style, I made the smart descion to forgo using AI.
 
 ## AI Debugging
-In order to not leave myself with large amounts of bugs to fix after all content was implemented, I fixed bugs as I noticed them whilst coding. With the usage of the [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) addon this was simple, and it would have been far slower to ask AI to do it for me. Chrome dev tools were used to get exact pixel amounts for padding adjustment. [WAVE](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) quickly pointed out any accessibility issues, and these were all simple to fix manually. 
+In order to not leave myself with large amounts of bugs to fix after all content was implemented, I fixed bugs as I noticed them whilst coding. With the usage of the [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) addon this was simple, and it would have been far slower to ask AI to do it for me. Chrome dev tools were used to get exact pixel amounts for padding adjustment. [WAVE](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) quickly pointed out any accessibility issues, and these were all simple to fix manually. Like with code generation, it would have been far slower to use AI for this so I chose not to.
 
 ## AI Optimisation
-After uploading the project to GitHub and using GitHub Pages for hosting, I used Google's Lighthouse tool built into dev tools to check for optimisation issues. There were no optimisation issues. Therefore AI was not needed here.
+After uploading the project to GitHub and using GitHub Pages for hosting, I used Google's Lighthouse tool built into Chrome dev tools to check for optimisation issues and usage of best practices. There were no issues with either of these. Therefore AI was not needed here.
 
 ## Reflection on AI Usage
 
-AI was useless for this project. It was unnecessary, unwieldy, and slow for my use case. Prompts took longer to create than just writing the code manually. For a topic as important and personal as mental health, using AI to generate the website content is incredibly innapropriate - and on a personal level I do not wish to contribute to the rising amount of AI slop dumped onto the internet. Non-AI generated images were chosen for the website, as AI generated images look unprofessional and cheap, along with their method of generation being of dubious morality. In additon, I know plenty of people that will immediately close a website if they suspect AI usage, however no person is going to use a website specifically because it was AI generated. Therefore, I had good reason to use real artwork by real artists for my project.
+AI was of no use for this project. It was unnecessary, unwieldy, and slow for my use case. Prompts took longer to create than just writing the code manually. 
+
+For a topic as important, personal, and human as mental health, using AI to generate the website content would be incredibly innapropriate. Especially as the website contains a contact form - you would expect the owners of the website to have a great understanding of mental health. Generating the content with AI would then make the website untrustworthy, and not one where the contact form would be of use.
+
+ Non-AI generated images were chosen for the website, as AI generated images look unprofessional and cheap. In additon, I know plenty of people that will immediately close a website if they suspect AI usage, however no person is going to use a website specifically because it was AI generated. Therefore, I had good reason to use real artwork by real artists for my project.
 
 # References and Credits
 
 - Project brief and learning materials by [Code Institute](https://codeinstitute.net/)
-- [Bootstrap 5.3 Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- Base code for Bootstrap components taken from [Bootstrap 5.3 Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- Project created using [VSCode](https://code.visualstudio.com/)
+- Best accessibility practices checked using [WAVE](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
 - Stock images from [Freepik](https://www.freepik.com/)
 - Favicon generated by [favicon.io](https://favicon.io/)
 - Colour palatte partially created with help from [Coolors](https://coolors.co/)
